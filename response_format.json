@@ -1,0 +1,73 @@
+{"status": "ok", "totalResults": 38, "articles": [{"source": {"id": "reuters", "name": "Reuters"}, "author": "Howard Schneider", "title": "Trump slams Fed's Powell over rates, saying termination can't 'come fast enough' - Reuters", "description": "U.S. President Donald Trump said on Thursday that Federal Reserve Chair Jerome Powell's termination \"cannot come fast enough,\" while calling for the U.S. central bank to cut interest rates, the sort of pressure that Powell just a day before had pledged to res\u2026", "url": "https://www.reuters.com/world/us/trump-says-fed-chair-powells-termination-cant-come-fast-enough-2025-04-17/", "urlToImage": "https://www.reuters.com/resizer/v2/MH3T6DZUDNLVNLKC3TQTLAPYFM.jpg?auth=f62e29985fd5053c8e797fbe2d012484e02e9bed3645dd0179a29dadfcf5ddc9&height=1005&width=1920&quality=80&smart=true", "publishedAt": "2025-04-17T16:02:50Z", "content": null}, {"source": {"id": null, "name": "MarketWatch"}, "author": "Joy Wiltermuth, Joseph Adinolfi, Myra P. Saefong, Isabel Wang, William Watts, Christine Idzelis, Jeffry Bartash, Robert Schroeder, Jamie Chisholm", "title": "Stock Market Today: Dow tumbles 500 points, S&P 500 bounces on reports suggesting Trump won't fire Powell - MarketWatch", "description": "It's a cautious mood on Wall Street ahead of the holiday weekend, with Japan-U.S. trade talks in focus, UnitedHealth and criticism by President Trump of Fed Chair Powell.", "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-and-nasdaq-in-line-for-higher-open-netflix-earnings-on-tap", "urlToImage": "https://images.mktw.net/im-46333467/social", "publishedAt": "2025-04-17T15:44:00Z", "content": null}, {"source": {"id": null, "name": "The Guardian"}, "author": "Helen Davidson", "title": "Nvidia\u2019s CEO makes surprise visit to Beijing after US restricts chip sales to China - The Guardian", "description": "Jensen Huang causes stir on social media and is reported to have met founder of AI company DeepSeek", "url": "https://www.theguardian.com/technology/2025/apr/17/nvidias-ceo-surprise-visit-beijing-restricts-chip-sales-china", "urlToImage": "https://i.guim.co.uk/img/media/654fb3bbae04909df81cdc90834b5c4557c298a4/0_159_5000_3001/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=25a5b694a315fbdf34b2fc1e78099839", "publishedAt": "2025-04-17T15:43:00Z", "content": "The chief executive of the American chip maker Nvidia visited Beijing on Thursday, days after the US issued fresh restrictions on sales of the only AI chip it was still allowed to sell to China.\r\nJen\u2026 [+4795 chars]"}, {"source": {"id": "cnn", "name": "CNN"}, "author": "Brian Fung, Clare Duffy", "title": "Google is an online advertising monopoly, judge rules - CNN", "description": "Google has illegally built \u201cmonopoly power\u201d with its web advertising business, a federal judge in Virginia has ruled, siding with the Justice Department in a landmark case against the tech giant that could reshape the basic economics of running a modern websi\u2026", "url": "https://www.cnn.com/2025/04/17/tech/google-adtech-trial-decision/index.html", "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2024-08-13t231619z-719517942-rc2af9abf94n-rtrmadp-3-google-hardware-copy.jpg?c=16x9&q=w_800,c_fill", "publishedAt": "2025-04-17T15:29:00Z", "content": "Google has illegally built monopoly power with its web advertising business, a federal judge in Virginia has ruled, siding with the Justice Department in a landmark case against the tech giant that c\u2026 [+3322 chars]"}, {"source": {"id": null, "name": "Barron's"}, "author": "Barron's", "title": "UnitedHealth Stock Is Having Its Worst Day in 25 Years After Earnings. Here\u2019s Why. - Barron's", "description": null, "url": "https://www.barrons.com/articles/united-health-unh-earnings-stock-price-b66e5659", "urlToImage": null, "publishedAt": "2025-04-17T15:25:00Z", "content": null}]}
+
+{
+    "status": "ok",
+    "totalResults": 38,
+    "articles": [
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Howard Schneider",
+            "title": "Trump slams Fed's Powell over rates, saying termination can't 'come fast enough' - Reuters",
+            "description": "U.S. President Donald Trump said on Thursday that Federal Reserve Chair Jerome Powell's termination \"cannot come fast enough,\" while calling for the U.S. central bank to cut interest rates, the sort of pressure that Powell just a day before had pledged to res\u2026",
+            "url": "https://www.reuters.com/world/us/trump-says-fed-chair-powells-termination-cant-come-fast-enough-2025-04-17/",
+            "urlToImage": "https://www.reuters.com/resizer/v2/MH3T6DZUDNLVNLKC3TQTLAPYFM.jpg?auth=f62e29985fd5053c8e797fbe2d012484e02e9bed3645dd0179a29dadfcf5ddc9&height=1005&width=1920&quality=80&smart=true",
+            "publishedAt": "2025-04-17T16:02:50Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MarketWatch"
+            },
+            "author": "Joy Wiltermuth, Joseph Adinolfi, Myra P. Saefong, Isabel Wang, William Watts, Christine Idzelis, Jeffry Bartash, Robert Schroeder, Jamie Chisholm",
+            "title": "Stock Market Today: Dow tumbles 500 points, S&P 500 bounces on reports suggesting Trump won't fire Powell - MarketWatch",
+            "description": "It's a cautious mood on Wall Street ahead of the holiday weekend, with Japan-U.S. trade talks in focus, UnitedHealth and criticism by President Trump of Fed Chair Powell.",
+            "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-and-nasdaq-in-line-for-higher-open-netflix-earnings-on-tap",
+            "urlToImage": "https://images.mktw.net/im-46333467/social",
+            "publishedAt": "2025-04-17T15:44:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Guardian"
+            },
+            "author": "Helen Davidson",
+            "title": "Nvidia\u2019s CEO makes surprise visit to Beijing after US restricts chip sales to China - The Guardian",
+            "description": "Jensen Huang causes stir on social media and is reported to have met founder of AI company DeepSeek",
+            "url": "https://www.theguardian.com/technology/2025/apr/17/nvidias-ceo-surprise-visit-beijing-restricts-chip-sales-china",
+            "urlToImage": "https://i.guim.co.uk/img/media/654fb3bbae04909df81cdc90834b5c4557c298a4/0_159_5000_3001/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=25a5b694a315fbdf34b2fc1e78099839",
+            "publishedAt": "2025-04-17T15:43:00Z",
+            "content": "The chief executive of the American chip maker Nvidia visited Beijing on Thursday, days after the US issued fresh restrictions on sales of the only AI chip it was still allowed to sell to China.\r\nJen\u2026 [+4795 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Brian Fung, Clare Duffy",
+            "title": "Google is an online advertising monopoly, judge rules - CNN",
+            "description": "Google has illegally built \u201cmonopoly power\u201d with its web advertising business, a federal judge in Virginia has ruled, siding with the Justice Department in a landmark case against the tech giant that could reshape the basic economics of running a modern websi\u2026",
+            "url": "https://www.cnn.com/2025/04/17/tech/google-adtech-trial-decision/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2024-08-13t231619z-719517942-rc2af9abf94n-rtrmadp-3-google-hardware-copy.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2025-04-17T15:29:00Z",
+            "content": "Google has illegally built monopoly power with its web advertising business, a federal judge in Virginia has ruled, siding with the Justice Department in a landmark case against the tech giant that c\u2026 [+3322 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Barron's"
+            },
+            "author": "Barron's",
+            "title": "UnitedHealth Stock Is Having Its Worst Day in 25 Years After Earnings. Here\u2019s Why. - Barron's",
+            "description": null,
+            "url": "https://www.barrons.com/articles/united-health-unh-earnings-stock-price-b66e5659",
+            "urlToImage": null,
+            "publishedAt": "2025-04-17T15:25:00Z",
+            "content": null
+        }
+    ]
+}
