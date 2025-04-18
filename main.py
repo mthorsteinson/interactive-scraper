@@ -48,6 +48,7 @@ def get_details(index):
     details = data["articles"][index]["description"]
     print(colorama.Style.BRIGHT + f"\nDetails:\n{details}\n")
 
+'''
 def pick_headline():
     while True:
         try:
@@ -58,6 +59,14 @@ def pick_headline():
                 print(colorama.Fore.RED + f"That's not an option. Try again (1, 2, 3, 4, or 5): ")
         except ValueError:
             print("Please enter a number: ")
+'''
+
+def pick_headline():
+    pick = int(input("\nWhich headline would you like to learn more about? (1, 2, 3, 4, or 5): "))
+    if pick not in range(1,6):
+        print(colorama.Fore.RED + f"That's not an option. Try again (1, 2, 3, 4, or 5): ")
+        return pick_headline()
+    return pick - 1
 
 def more_details():
     more = input(f"Would you like to learn more about one of these headlines? (y/n) ").lower()
