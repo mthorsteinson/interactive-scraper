@@ -84,6 +84,5 @@ if __name__ == "__main__":
     category = pick_category()
     get_headlines("us",category)
     more_details()
-    #response = response.json()
-    #print(json.dumps(response,indent=4))
+
 
