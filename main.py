@@ -44,25 +44,37 @@ def pick_category():
     print(f"\n")
     return category
 
-def more_details(index):
+def get_details(index):
     details = data["articles"][index]["description"]
     print(colorama.Style.BRIGHT + f"\nDetails:\n{details}\n")
 
+def pick_headline():
+    while True:
+        try:
+            pick = int(input("\nWhich headline would you like to learn more about? (1, 2, 3, 4, or 5): "))
+            if pick in range(1,6):
+                return pick - 1
+            else:
+                print(colorama.Fore.RED + f"That's not an option. Try again (1, 2, 3, 4, or 5): ")
+        except ValueError:
+            print("Please enter a number: ")
+
+def more_details():
+    more = input(f"Would you like to learn more about one of these headlines? (y/n) ").lower()
+    while more not in ("y","n"):
+        more = input(colorama.Fore.RED + "Uh, try again (y/n): " + colorama.Style.RESET_ALL).lower()
+    if more == "y":
+        index = pick_headline()
+        get_details(index)
+    else:
+        print(colorama.Style.BRIGHT + f"\nThanks for coming by!\n")
 
 
 if __name__ == "__main__":
     fakecountry = pick_country()
     category = pick_category()
     get_headlines("us",category)
-    more = input(f"Would you like to learn more about one of these headlines? (y/n) ").lower()
-    while more not in ("y","n"):
-        more = input(colorama.Fore.RED + "Uh, try again (y/n): " + colorama.Style.RESET_ALL).lower()
-    if more == "y":
-        index = int(input("Which headline would you like to learn more about? (1, 2, 3, 4, or 5): "))
-        index = index - 1
-        more_details(index)
-    else:
-        print(colorama.Style.BRIGHT + f"\nThanks for coming by!\n")
+    more_details()
     #response = response.json()
     #print(json.dumps(response,indent=4))
 
