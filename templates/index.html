@@ -1,6 +1,12 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<!-- Update the index to include additional context --> 
+<html>
+<head>
+    <title>News Headlines</title>
+</head>
+<body>
+    <h1>Top 5 News Headlines</h1>
 
-{% block body %}
     <form method="POST">
         <label for="category">Select a Category:</label>
         <select name="category" id="category">
@@ -14,4 +20,16 @@
         </select>
         <button type="submit">Get Headlines</button>
     </form>
-{% endblock %}
+
+    {% if error %}
+        <p style="color:red;">Error: {{ error }}</p>
+    {% endif %}
+
+    {% for article in articles %}
+        <h3>{{ loop.index }}. {{ article.title }}</h3>
+        <p>{{ article.description }}</p>
+        <a href="{{ article.url }}" target="_blank">Read more</a>
+        <hr>
+    {% endfor %}
+</body>
+</html>
