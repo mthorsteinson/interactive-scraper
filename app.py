@@ -63,7 +63,16 @@ def index():
 
     return flask.render_template("index.html",articles=articles,error=error)
 
+@app.route("/index2", methods=["GET","POST"])
+def index2():
+    articles = []
+    error = None
 
+    if flask.request.method == "POST":
+        category = flask.request.form.get("category","technology")
+        articles, error = get_headlines("us",category)
+
+    return flask.render_template("index2.html",articles=articles,error=error)
 
 if __name__ == "__main__":
     app.run(debug=True)
