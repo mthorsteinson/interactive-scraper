@@ -60,7 +60,10 @@ def index():
     if flask.request.method == "POST":
         category = flask.request.form.get("category","technology")
         articles, error = get_headlines("us",category)
-
+    if error == None:
+        return flask.render_template("index2.html",articles=articles,error=error)
+    else:
+        return flask.render_template("failure.html",articles=articles,error=error)
     return flask.render_template("index.html",articles=articles,error=error)
 
 @app.route("/index2", methods=["GET","POST"])
@@ -71,8 +74,17 @@ def index2():
     if flask.request.method == "POST":
         category = flask.request.form.get("category","technology")
         articles, error = get_headlines("us",category)
+    if error == None:
+        return flask.render_template("index2.html",articles=articles,error=error)
+    else:
+        return flask.render_template("failure.html",articles=articles,error=error)
+    
+@app.route("/failure", methods=["GET"])
+def failure():
+    articles = []
+    error = None
+    return flask.render_template("failure.html",articles=articles,error=error)
 
-    return flask.render_template("index2.html",articles=articles,error=error)
 
 if __name__ == "__main__":
     app.run(debug=True)
