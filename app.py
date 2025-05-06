@@ -38,8 +38,9 @@ def pick_country():
 
 def pick_category():
     category = input("Please enter a news category:\nOptions -- " + colorama.Fore.GREEN + "Business, Entertainment, General, Health, Science, Sports, Technology\n" + colorama.Style.RESET_ALL).lower().strip()
-    options = ["business", "entertainment", "general", "health", "science", "sports", "technology"]
-    if category not in options:
+    global choices
+    choices = ["business", "entertainment", "general", "health", "science", "sports", "technology"]
+    if category not in choices:
         print(colorama.Fore.RED + f"\nThat's not a valid category. Try again.\n")
         category = pick_category()
     print(f"\n")
@@ -56,34 +57,36 @@ def more_details(index):
 def index():
     articles = []
     error = None
+    listitems = choices
 
-    if flask.request.method == "POST":
+    if flask.request.method in ["POST","GET"]:
         category = flask.request.form.get("category","technology")
         articles, error = get_headlines("us",category)
     if error == None:
-        return flask.render_template("index2.html",articles=articles,error=error)
+        return flask.render_template("index.html",articles=articles,error=error,listitems=listitems)
     else:
-        return flask.render_template("failure.html",articles=articles,error=error)
-    return flask.render_template("index.html",articles=articles,error=error)
+        return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems)
 
 @app.route("/index2", methods=["GET","POST"])
 def index2():
     articles = []
     error = None
+    listitems = choices
 
-    if flask.request.method == "POST":
+    if flask.request.method in ["POST","GET"]:
         category = flask.request.form.get("category","technology")
         articles, error = get_headlines("us",category)
     if error == None:
-        return flask.render_template("index2.html",articles=articles,error=error)
+        return flask.render_template("index2.html",articles=articles,error=error,listitems=listitems)
     else:
-        return flask.render_template("failure.html",articles=articles,error=error)
+        return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems)
     
-@app.route("/failure", methods=["GET"])
+@app.route("/failure", methods=["GET","POST"])
 def failure():
     articles = []
     error = None
-    return flask.render_template("failure.html",articles=articles,error=error)
+    listitems = choices
+    return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems)
 
 
 if __name__ == "__main__":
