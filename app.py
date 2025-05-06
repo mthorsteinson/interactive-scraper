@@ -9,6 +9,7 @@ colorama.init(autoreset=True)
 api_key = "9558ec233d504b21baccdf101b12ceed"
 url = "https://newsapi.org/v2/top-headlines/"
 choices = ["business", "entertainment", "general", "health", "science", "sports", "technology"]
+choices1 = [item.title() for item in choices]
 
 
 def get_headlines(country="us",category="technology"):
@@ -61,35 +62,48 @@ def more_details(index):
 def index():
     articles = []
     error = None
-    listitems = choices
-
+    listitems = choices1
+    category = flask.request.form.get("category", "technology").capitalize()
     if flask.request.method in ["POST","GET"]:
-        category = flask.request.form.get("category","technology")
         articles, error = get_headlines("us",category)
     if error == None:
-        return flask.render_template("index.html",articles=articles,error=error,listitems=listitems)
+        return flask.render_template("index.html",articles=articles,error=error,listitems=listitems,category=category)
     else:
-        return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems)
+        return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems,category=category)
 
 @app.route("/index2", methods=["GET","POST"])
 def index2():
     articles = []
     error = None
-    listitems = choices
-
+    listitems = choices1
+    category = flask.request.form.get("category", "technology").capitalize()
+    print(category)
     if flask.request.method in ["POST","GET"]:
-        category = flask.request.form.get("category","technology")
         articles, error = get_headlines("us",category)
     if error == None:
-        return flask.render_template("index2.html",articles=articles,error=error,listitems=listitems)
+        return flask.render_template("index2.html",articles=articles,error=error,listitems=listitems,category=category)
     else:
-        return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems)
+        return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems,category=category)
+    
+@app.route("/index3", methods=["GET","POST"])
+def index3():
+    articles = []
+    error = None
+    listitems = choices1
+    category = flask.request.form.get("category", "technology").capitalize()
+    print(category)
+    if flask.request.method in ["POST","GET"]:
+        articles, error = get_headlines("us",category)
+    if error == None:
+        return flask.render_template("index3.html",articles=articles,error=error,listitems=listitems,category=category)
+    else:
+        return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems,category=category)
     
 @app.route("/failure", methods=["GET","POST"])
 def failure():
     articles = []
     error = None
-    listitems = choices
+    listitems = choices1
     return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems)
 
 
