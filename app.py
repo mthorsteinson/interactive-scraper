@@ -99,6 +99,21 @@ def index3():
     else:
         return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems,category=category)
     
+''' ## Implement a new route with new functionality
+@app.route("/", methods=["GET","POST"])
+def index():
+    articles = []
+    error = None
+    listitems = choices1
+    category = flask.request.form.get("category", "technology").capitalize()
+    if flask.request.method in ["POST","GET"]:
+        articles, error = get_headlines("us",category)
+    if error == None:
+        return flask.render_template("index.html",articles=articles,error=error,listitems=listitems,category=category)
+    else:
+        return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems,category=category)
+'''
+            
 @app.route("/failure", methods=["GET","POST"])
 def failure():
     articles = []
