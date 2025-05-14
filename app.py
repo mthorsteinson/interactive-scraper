@@ -99,9 +99,9 @@ def index3():
     else:
         return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems,category=category)
     
-''' ## Implement a new route with new functionality
+''' ## Implement a search route with new functionality
 @app.route("/", methods=["GET","POST"])
-def index():
+def search():
     articles = []
     error = None
     listitems = choices1
