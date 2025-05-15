@@ -109,7 +109,7 @@ def search():
     if flask.request.method in ["POST","GET"]:
         articles, error = get_headlines("us",category)
     if error == None:
-        return flask.render_template("index.html",articles=articles,error=error,listitems=listitems,category=category)
+        return flask.render_template("search.html",articles=articles,error=error,listitems=listitems,category=category)
     else:
         return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems,category=category)
 '''
