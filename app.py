@@ -99,6 +99,7 @@ def index3():
     else:
         return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems,category=category)
     
+           
             
 @app.route("/failure", methods=["GET","POST"])
 def failure():
