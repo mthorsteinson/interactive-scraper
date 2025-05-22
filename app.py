@@ -100,7 +100,7 @@ def index3():
         return flask.render_template("failure.html",articles=articles,error=error,listitems=listitems,category=category)
 
 @app.route("/search", methods=["GET","POST"])
-def index():
+def search():
     articles = []
     error = None
     listitems = choices1
