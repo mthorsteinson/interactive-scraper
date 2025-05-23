@@ -77,7 +77,6 @@ def index2():
     error = None
     listitems = choices1
     category = flask.request.form.get("category", "technology").capitalize()
-    print(category)
     if flask.request.method in ["POST","GET"]:
         articles, error = get_headlines("us",category)
     if error == None:
@@ -91,7 +90,6 @@ def index3():
     error = None
     listitems = choices1
     category = flask.request.form.get("category", "technology").capitalize()
-    print(category)
     if flask.request.method in ["POST","GET"]:
         articles, error = get_headlines("us",category)
     if error == None:
