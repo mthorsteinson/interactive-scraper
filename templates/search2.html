@@ -47,13 +47,7 @@
                         <select name="category" id="category" class="form-select">
                             <option value="" disabled selected>Pick an option</option>
                             {% for item in listitems %}
-                                <option value="{{ item }}" {% if item == category %}selected{% endif %}>{{ item.capitalize() }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Get Headlines</button>
-                </form>
-    </div>
+
 
         <!-- Error Message (if any) -->
         {% if error %}
